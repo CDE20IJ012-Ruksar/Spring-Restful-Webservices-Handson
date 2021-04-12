@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+https://www.springframework.org/schema/beans/spring-beans.xsd"> 
+
+<bean id="employeeList" class="java.util.ArrayList"> 
+<constructor-arg> 
+<list> 
+<ref bean="ray"></ref> 
+<ref bean="john"></ref> 
+<ref bean="joe"></ref> 
+<ref bean="riya"></ref> 
+</list> 
+</constructor-arg> 
+</bean>
+
+<bean id="ray" class="com.cognizant.springlearn.model.Employee"> 
+<property name="id" value="1" /> 
+<property name="name" value="Ray" /> 
+<property name="dept" value="Sales" /> 
+<property name="skill" value="Marketing" /> 
+</bean>
+
+<bean id="john" class="com.cognizant.springlearn.model.Employee"> 
+<property name="id" value="2" /> 
+<property name="name" value="John" /> 
+<property name="dept" value="Developer" /> 
+<property name="skill" value="Operating System" /> 
+</bean>
+
+<bean id="joe" class="com.cognizant.springlearn.model.Employee"> 
+<property name="id" value="3" /> 
+<property name="name" value="Joe" /> 
+<property name="dept" value="Business" /> 
+<property name="skill" value="Marketing" /> 
+</bean>
+
+<bean id="riya" class="com.cognizant.springlearn.model.Employee"> 
+<property name="id" value="4" /> 
+<property name="name" value="Riya" /> 
+<property name="dept" value="Developer" /> 
+<property name="skill" value="IDE's" /> 
+</bean>
+
+<bean id="departmentList" class="java.util.ArrayList"> 
+<constructor-arg> 
+<list> 
+<ref bean="department1"></ref> 
+<ref bean="department2"></ref> 
+<ref bean="department3"></ref> 
+<ref bean="department4"></ref> 
+</list> 
+</constructor-arg> 
+</bean>
+
+<bean id="department1" class="com.cognizant.springlearn.model.Employee">
+<property name="dept" value="Sales" />
+</bean>
+
+<bean id="department2" class="com.cognizant.springlearn.model.Employee">
+<property name="dept" value="Developer" />
+</bean>
+
+<bean id="department3" class="com.cognizant.springlearn.model.Employee">
+<property name="dept" value="Business" />
+</bean>
+
+<bean id="department4" class="com.cognizant.springlearn.model.Employee">
+<property name="dept" value="Developer" />
+</bean>
+
+
+</beans> 
